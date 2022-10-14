@@ -1,0 +1,456 @@
+/*CSS Styles*/
+body, html {
+height : 100%;
+width : 100%;
+}
+
+h1 {
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 50px;
+font-family : "Merriweather";
+color : black;
+background-image : linear-gradient(to right, rgb(64, 224, 208, 0), rgb(64, 224, 208, 1));
+}
+
+h2 {
+margin-right : 150px;
+margin-left : 80px;
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 30px;
+font-family : 'Merriweather';
+color : navy;
+}
+
+h3 {
+margin-right : 150px;
+margin-left : 80px;
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 20px;
+font-family : 'Merriweather';
+color : navy;
+}
+
+div {
+margin-right : auto;
+margin-left : auto;
+margin-top : 0;
+margin-bottom : 0;
+background-image : linear-gradient(to right, rgb(175, 238, 238, 0), rgb(175, 238, 238, 1));
+}
+p {
+margin-right : 100px;
+margin-left : 80px;
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 18px;
+font-family : 'Merriweather';
+color : black;
+}
+img {
+display : block;
+margin-left : auto;
+margin-right : auto;
+width : 50%;
+}
+table {
+display : block;
+margin-left : auto;
+margin-right : auto;
+width : 80%;
+border-collapse : collapse;
+}
+td {
+text-align : center;
+padding : 10px;
+font-size : 18px;
+font-family : 'Merriweather';
+vertical-align : middle;
+}
+.td1 {
+color : darkred;
+background-color : lightpink;
+border : solid 1px;
+border-color : darkred;
+}
+.td2 {
+color : darkgreen;
+background-color : lightgreen;
+border : solid 1px;
+border-color : darkgreen;
+}
+iframe {
+display : block;
+height : 400px;
+width : 70%;
+margin-left : auto;
+margin-right : auto;
+}
+.parallax_index_1 {
+background-image : url("index1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_index_2 {
+background-image : url("index2.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_index_3 {
+background-image : url("title.jpg");
+height : 612px;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_index_4 {
+background-image : url("index4.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_vax_1 {
+background-image : url("vax1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_vax_2 {
+background-image : url("vax2.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_stat_1 {
+background-image : url("stat1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_var_1 {
+background-image : url("var1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_var_2 {
+background-image : url("var2.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_diag_1 {
+background-image : url("diag1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_pre_1 {
+background-image : url("pre1.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_feed_1 {
+background-image : url("feedback.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_pre_2 {
+background-image : url("pre2.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_pre_3 {
+background-image : url("pre3.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_diag_2 {
+background-image : url("diag2.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_diag_3 {
+background-image : url("diag3.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.parallax_myths_1 {
+background-image : url("myths.jpg");
+height : 300px;
+background-attachment : fixed;
+background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
+}
+.refer {
+margin-right : 100px;
+margin-left : 80px;
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 13px;
+font-family : 'Merriweather';
+color : black;
+}
+.open-button {
+background-color : #008B8B;
+color : white;
+padding : 12px 15px;
+border : none;
+cursor : pointer;
+opacity : 0.7;
+position : fixed;
+bottom : 23px;
+right : 28px;
+width : 280px;
+font-size : 20px;
+font-family : 'Merriweather';
+}
+.form-popup {
+display : none;
+position : fixed;
+bottom : 0;
+right : 15px;
+border : #f1f1f1 solid 3px;
+z-index : 9;
+}
+.form-container {
+max-width : 300px;
+padding : 10px;
+background-color : white;
+background-image : linear-gradient(to right, rgb(173, 216, 230, 0), rgb(173, 216, 230, 1));
+}
+
+.form-container input[type="text"], .form-container input[type="password"] {
+width : 250px;
+padding : 15px;
+margin : 5px 0 22px 0;
+border : none;
+font-family : 'Merriweather';
+background : white;
+}
+
+.form-container input[type="text"]:focus, .form-container input[type="password"]:focus {
+background-color : #E0FFFF;
+border-style : groove;
+border-color : #00FFFF;
+font-family : 'Merriweather';
+outline : none;
+}
+
+.form-container .btn {
+background-color : #04AA6D;
+color : white;
+padding : 16px 20px;
+border : none;
+cursor : pointer;
+width : 100%;
+margin-bottom : 10px;
+font-family : 'Merriweather';
+opacity : 0.7;
+}
+
+.btn {
+background-color : #04AA6D;
+color : white;
+padding : 16px 20px;
+border : none;
+cursor : pointer;
+width : 100%;
+margin-bottom : 10px;
+font-family : 'Merriweather';
+opacity : 0.7;
+}
+
+.btn-scroll {
+background-color : #ADD8E6;
+color : Navy;
+padding : 16px 20px;
+border : none;
+cursor : pointer;
+width : 23%;
+margin-bottom : 10px;
+font-family : 'Merriweather';
+opacity : 0.8;
+}
+
+
+.form-container .cancel {
+background-color : red;
+}
+
+.cancel {
+background-color : red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+opacity : 1;
+}
+
+.btn:hover, .open-button:hover {
+opacity : 1;
+}
+
+label {
+color : #000080;
+font-size : 12px;
+font-family : 'Merriweather';
+}
+
+textarea {
+width : 80%;
+height : 200px;
+margin-left : 40px;
+font-size : 18px;
+font-family : 'Merriweather';
+text-align : left;
+}
+
+textarea:focus {
+  background-color : #E0FFFF;
+  border-style : groove;
+  border-color : #00FFFF;
+  outline : none;
+}
+
+.label_big {
+margin-right : 100px;
+margin-left : 40px;
+margin-top : 0;
+margin-bottom : 0;
+text-align : left;
+font-size : 18px;
+font-family : 'Merriweather';
+color : black;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+background-color : #E0FFFF;
+border-style : groove;
+border-color : #00FFFF;
+outline : none;
+}
+
+ul {
+display : flex;
+justify-content : space-between;
+list-style-type : none;
+margin : 0;
+padding : 0;
+overflow : hidden;
+background-color : #008080;
+}
+
+li {
+float : left;
+}
+
+li a {
+display : block;
+color : white;
+font-size : 15px;
+text-align : center;
+padding : 14px 16px;
+text-decoration : none;
+font-family : 'Merriweather';
+transition-duration : 0.4s;
+}
+
+.head_li {
+font-size : 20px;
+font-weight : bold;
+font-family : 'Caveat';
+}
+
+.navdiv {
+  background-color : #008080;
+  background-image : linear-gradient(to right, rgb(175, 238, 238, 0), rgb(175, 238, 238, 0));
+}
+
+.nav-item {
+  color : white;
+  font-size : 15px;
+  text-align : center;
+  padding : 0px;
+  text-decoration : none;
+  font-family : 'Merriweather';
+}
+
+li a:active {
+background-color: #F5FFFA;
+color: #008080;
+}
+
+li a:hover {
+background-color: #F5FFFA;
+color: #008080;
+border-color: black;
+}
+
+.btn-small {
+  margin-left: 40px;
+  width: 300px;
+}
+
+.btn-location {
+  background-color: #4B0082;
+}
+
+.btn-location:hover {
+  color: white;
+}
+
+h4 {
+  font-size: 10px;
+  color: red;
+  margin-top : 0;
+  margin-bottom : 0;
+  margin-left: 40px;
+  text-align : left;
+  font-family : "Merriweather";
+}

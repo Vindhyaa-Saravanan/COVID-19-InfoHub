@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en" manifest="covid.appcache">
+    <!-- Page Title and Link to CSS -->
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="javascript.js"></script>
+      <title>COVID Vaccines</title>
+    </head>
+
+    <!-- Main Body of Page -->
+    <body class = "body">
+
+      <!-- Main Navigation Bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid navdiv">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav nav-fill w-100">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="vaccines.html">About Vaccines</a></li>
+        <li><a href="variants.html">About Variants</a></li>
+        <li><a href="diagnosis.html">Diagnosis</a></li>
+        <li><a href="myths.html">Myths</a></li>
+        <li><a href="precautions.html">Precautions</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Newsletter Sign up Form -->
+<button class="open-button" onclick="openForm()">Signup to our weekly newsletter!</button>
+<div class="form-popup" id="form1">
+  <form action="/action_page.php" class="form-container" onsubmit="return validateForm1()">
+    <h3><b>SignUp</b></h3>
+    <br>
+    <h4>Required fields are marked with an asterisk (*)</h4>
+    <label for="fname"><b>Name: *</b></label><br>
+    <input type="text" id="fname" placeholder="Enter Name" name="fname" required><br>
+    <label for="email"><b>Email: *</b></label>
+    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+    <label>
+        <input type="checkbox" id="checkbox1" name="market">
+        I consent to receiving informative and marketing emails from COVID InfoHub.
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="checkbox2" checked="checked" name="market" required>
+        I agree to the <a>Terms and Conditions</a> and <a>Privacy Policy *</a>.
+    </label>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+
+
+      <!-- Paragraph 1 -->
+      <div class = "parallax_vax_1"></div>
+
+      <div>
+        <p id="result"></p>
+        <h2>What are vaccines?</h2>
+        <p class = "p">
+          A vaccine is a biological preparation that provides active acquired immunity to a particular infectious disease.<br>
+          <br>
+           A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins. The agent stimulates the body's immune system to recognize the agent as a threat, destroy it, and to further recognize and destroy any of the microorganisms associated with that agent that it may encounter in the future.<br>
+           <br>
+          Vaccines can be prophylactic (to prevent or ameliorate the effects of a future infection by a natural or "wild" pathogen), or therapeutic (to fight a disease that has already occurred, such as cancer).<br>
+          </p>
+          <br>
+          <iframe class="center" src="https://www.youtube.com/embed/rb7TVW77ZCs" allowfullscreen></iframe>
+          <br>
+        </div>
+
+        <!-- Paragraph 2 -->
+      <div class = "parallax_vax_2"></div>
+
+        <div>
+          <h2>List of WHO-approved vaccines</h2>
+          <p class = "p">
+            There are several COVID-19 vaccines validated for use by WHO (given Emergency Use Listing). The first mass vaccination programme started in early December 2020.<br>
+            The WHO Emergency Use Listing process determines whether a product can be recommended for use based on all the available data on safety and efficacy and on its suitability in low- and middle-income countries. Vaccines are assessed to ensure they meet acceptable standards of quality, safety and efficacy using clinical trial data, manufacturing and quality control processes. <br>
+            <br>
+            As of 12 January 2022, the following vaccines have obtained EUL:<br>
+            <br>
+            • The Pfizer/BioNTech Comirnaty vaccine, 31 December 2020.<br>
+            • The SII/COVISHIELD and AstraZeneca/AZD1222 vaccines, 16 February 2021.<br>
+            • The Janssen/Ad26.COV 2.S vaccine developed by Johnson & Johnson, 12 March 2021.<br>
+            • The Moderna COVID-19 vaccine (mRNA 1273), 30 April 2021.<br>
+            • The Sinopharm COVID-19 vaccine, 7 May 2021.<br>
+            • The Sinovac-CoronaVac vaccine, 1 June 2021.<br>
+            • The Bharat Biotech BBV152 COVAXIN vaccine, 3 November 2021. <br>
+            • The Covovax (NVX-CoV2373) vaccine, 17 December 2021.<br>
+            • The Nuvaxovid (NVX-CoV2373) vaccine, 20 December 2021<br>
+            </p>
+          </div>
+
+          <div>
+            <h3>References</h3>
+            <br>
+            <p class = "refer">
+              Wikipedia. 2022.<i>Vaccine</i>[Online]. [Accessed 26 February 2022]. Available from: <a href="https://en.wikipedia.org/wiki/Vaccine">https://en.wikipedia.org/wiki/Vaccine</a><br>
+              WHO Staff. 2021.<i>WHO Website</i>. [Online]. [Accessed 1 March 2022]. Available from: <a href="https://www.who.int/news-room/questions-and-answers/item/coronavirus-disease-(covid-19)-vaccines">https://www.who.int/news-room/questions-and-answers/item/coronavirus-disease-(covid-19)-vaccines</a>
+            </p>
+            <br>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="Valid CSS!" />
+              </a>
+          </p>
+    </body>
+
+</html>

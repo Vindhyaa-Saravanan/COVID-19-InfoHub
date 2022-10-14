@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" manifest="covid.appcache">
+    <!-- Page Title and Link to CSS -->
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="javascript.js"></script>
+      <title>COVID Variants</title>
+    </head>
+
+    <!-- Main Body of Page -->
+    <body class = "body">
+
+      <!-- Main Navigation Bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid navdiv">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav nav-fill w-100">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="vaccines.html">About Vaccines</a></li>
+        <li><a href="variants.html">About Variants</a></li>
+        <li><a href="diagnosis.html">Diagnosis</a></li>
+        <li><a href="myths.html">Myths</a></li>
+        <li><a href="precautions.html">Precautions</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!-- Newsletter Sign up Form -->
+  <button class="open-button" onclick="openForm()">Signup to our weekly newsletter!</button>
+  <div class="form-popup" id="form1">
+    <form action="/action_page.php" class="form-container" onsubmit="return validateForm1()">
+      <h3><b>SignUp</b></h3>
+      <br>
+      <h4>Required fields are marked with an asterisk (*)</h4>
+      <label for="fname"><b>Name: *</b></label><br>
+      <input type="text" id="fname" placeholder="Enter Name" name="fname" required><br>
+      <label for="email"><b>Email: *</b></label>
+      <input type="text" id="email" placeholder="Enter Email" name="email" required>
+      <label>
+          <input type="checkbox" id="checkbox1" name="market">
+          I consent to receiving informative and marketing emails from COVID InfoHub.
+      </label>
+      <br>
+      <label>
+          <input type="checkbox" id="checkbox2" checked="checked" name="market" required>
+          I agree to the <a>Terms and Conditions</a> and <a>Privacy Policy *</a>.
+      </label>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-success">Sign Up</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+      <script>
+
+          function openForm() {
+            document.getElementById("form1").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("form1").style.display = "none";
+          }
+
+      </script>
+
+      <!-- Paragraph 1 -->
+      <div class = "parallax_var_1"></div>
+
+      <div>
+        <h2>What are variants?</h2>
+        <p class = "p">
+          Viruses constantly change through mutation and sometimes these mutations result in a new variant of the virus. Some variants emerge and disappear while others persist. New variants will continue to emerge. CDC and other public health organizations monitor all variants of the virus that causes COVID-19 in the United States and globally.<br>
+          <br>
+          Scientists monitor all variants but may classify certain ones as variants being monitored, variants of interest, variants of concern and variants of high consequence. Some variants spread more easily and quickly than other variants, which may lead to more cases of COVID-19. Even if a variant causes less severe disease in general,
+          an increase in the overall number of cases could cause an increase in hospitalizations, put more strain on healthcare resources and potentially lead to more deaths.<br>
+        </p>
+
+          <iframe class="center" src="https://www.youtube.com/embed/B8UEZ9cfgz4" allowfullscreen></iframe>
+
+        </div>
+
+        <!-- Paragraph 2 -->
+      <div class = "parallax_var_2"></div>
+
+        <div>
+          <h2>List of SARS-CoV-2 variants</h2>
+          <p class = "p">
+            <br>
+            <strong>Variant of Interest</strong><br>
+            Definition - A SARS-CoV-2 variant:<br>
+            • with genetic changes that are predicted or known to affect virus characteristics such as transmissibility, disease severity, immune escape, diagnostic or therapeutic escape; AND <br>
+            • Identified to cause significant community transmission or multiple COVID-19 clusters, in multiple countries with increasing relative prevalence alongside increasing number of cases over time, or other apparent epidemiological impacts to suggest an emerging risk to global public health.<br>
+            • <strong>For example: Alpha (B.1.1.7), Beta (B.1.351), Gamma (P.1), Delta (P.1.617.2), Omicron (B.1.1.529)</strong><br>
+            <br>
+            <strong>Variant of Concern</strong><br>
+            Definition - A SARS-CoV-2 variant that meets the definition of a VOI (see above) and, through a comparative assessment, has been demonstrated to be associated with one or more of the following changes at a degree of global public health significance: <br>
+
+            • Increase in transmissibility or detrimental change in COVID-19 epidemiology; OR <br>
+            • Increase in virulence or change in clinical disease presentation; OR <br>
+            • Decrease in effectiveness of public health and social measures or available diagnostics, vaccines, therapeutics. <br>
+            • <strong>For example: Lambda (C.37), Mu (B.1.621)</strong><br>
+            <br>
+            </p>
+          </div>
+
+          <div>
+            <h3>References</h3>
+            <br>
+            <p class = "refer">
+              WHO Staff. 2022. WHO website. [Online]. [Accessed 26 February 2022]. Available from: <a href="https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/">https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/</a><br>
+              Centers for Disease Control and Prevention. 2022.<i>CDC Website</i>. [Online]. [Accessed 1 March 2022]. Available from: <a href="https://www.cdc.gov/coronavirus/2019-ncov/variants/about-variants.html">https://www.cdc.gov/coronavirus/2019-ncov/variants/about-variants.html</a>
+            </p>
+            <br>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="Valid CSS!" />
+              </a>
+          </p>
+    </body>
+
+</html>

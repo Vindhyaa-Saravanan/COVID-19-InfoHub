@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en" manifest="covid.appcache">
+    <!-- Page Title and Link to CSS -->
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="javascript.js"></script>
+      <title>COVID Myths</title>
+    </head>
+
+    <!-- Main Body of Page -->
+    <body class = "body">
+
+      <!-- Main Navigation Bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid navdiv">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav nav-fill w-100">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="vaccines.html">About Vaccines</a></li>
+        <li><a href="variants.html">About Variants</a></li>
+        <li><a href="diagnosis.html">Diagnosis</a></li>
+        <li><a href="myths.html">Myths</a></li>
+        <li><a href="precautions.html">Precautions</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!-- Newsletter Sign up Form -->
+  <button class="open-button" onclick="openForm()">Signup to our weekly newsletter!</button>
+  <div class="form-popup" id="form1">
+    <form action="/action_page.php" class="form-container" onsubmit="return validateForm1()">
+      <h3><b>SignUp</b></h3>
+      <br>
+      <h4>Required fields are marked with an asterisk (*)</h4>
+      <label for="fname"><b>Name: *</b></label><br>
+      <input type="text" id="fname" placeholder="Enter Name" name="fname" required><br>
+      <label for="email"><b>Email: *</b></label>
+      <input type="text" id="email" placeholder="Enter Email" name="email" required>
+      <label>
+          <input type="checkbox" id="checkbox1" name="market">
+          I consent to receiving informative and marketing emails from COVID InfoHub.
+      </label>
+      <br>
+      <label>
+          <input type="checkbox" id="checkbox2" checked="checked" name="market" required>
+          I agree to the <a>Terms and Conditions</a> and <a>Privacy Policy *</a>.
+      </label>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-success">Sign Up</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+      <script>
+
+          function openForm() {
+            document.getElementById("form1").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("form1").style.display = "none";
+          }
+
+      </script>
+
+      <!-- Paragraph 1 -->
+      <div class = "parallax_myths_1"></div>
+
+      <div>
+        <h2>Common myths and misconceptions debunked</h2>
+        <p class = "p">
+        <br>
+        <table class="center">
+          <tr>
+            <td class="td1">MYTHS</td>
+            <td class="td2">FACTS</td>
+          </tr>
+
+          <tr>
+            <td class="td1" >Covid-19 can be transmitted through goods produced
+              in countries where there is ongoing transmission.</td>
+            <td class="td2" >Although it can last on surfaces for many hours, but the environment,
+              transportation and varying temperatures during shipment make it difficult
+              for the virus to remain active. If you feel the surface may be contaminated,
+              clean it with a disinfectant and wash your hands after touching it.</td>
+          </tr>
+
+          <tr>
+            <td class="td1" >Covid-19 can be transmitted by mosquitoes.</td>
+            <td class="td2" >There is no evidence that
+              the novel coronavirus can be transmitted through mosquitoes.
+              The virus can be spread through droplets from coughing, sneezing
+              or a patient’s saliva.</td>
+          </tr>
+
+          <tr>
+            <td class="td1" >Drinking alcohol can prevent Covid-19.</td>
+            <td class="td2" >Drinking alcohol, such as beer, liquor, wine doesn’t help prevent coronavirus.
+You should wash your hands often, wear masks, and avoid being close to
+those with a fever and cough.</td>
+          </tr>
+
+          <tr>
+            <td class="td1" >It is safer to wear gloves.</td>
+            <td class="td2" >It is safer to frequently clean your hands and not wear gloves
+Wearing gloves risks transferring germs from one surface to another and contaminating your hands when removing them. Wearing gloves does not replace cleaning hands. Health workers wear gloves only for specific tasks.</td>
+          </tr>
+
+          <tr>
+            <td class="td1" >Hydroxychloroquine is a cure for COVID-19.</td>
+            <td class="td2" >Clinical trials confirm that hydroxychloroquine does not prevent illness or death from COVID-19.
+Hydroxychloroquine or chloroquine, a common treatment for malaria and certain autoimmune diseases, has been studied as a preventative treatment for COVID-19. Evidence from these studies shows that hydroxychloroquine has little to no impact on illness, hospitalization, or death. </td>
+          </tr>
+
+          <tr>
+            <td class="td1" >Wearing masks cause CO2 intoxication.</td>
+            <td class="td2" >The prolonged use of medical masks* when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency
+The prolonged use of medical masks can be uncomfortable. However, it does not lead to CO2 intoxication nor oxygen deficiency. While wearing a medical mask, make sure it fits properly and that it is tight enough to allow you to breathe normally. Do not re-use a disposable mask and always change it as soon as it gets damp.</td>
+          </tr>
+
+        </table>
+        <br>
+
+          <iframe class="center" src="https://www.youtube.com/embed/VmQMGmpv8O0" allowfullscreen></iframe>
+
+        </div>
+
+          <div>
+
+            <h3>References</h3>
+            <br>
+            <p class = "refer">
+              WHO Staff. 2022. WHO website. [Online]. [Accessed 26 February 2022]. Available from: <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a>
+            </p>
+            <br>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="Valid CSS!" />
+              </a>
+          </p>
+    </body>
+
+</html>
